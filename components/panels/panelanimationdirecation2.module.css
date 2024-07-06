@@ -1,0 +1,34 @@
+.container {
+  background-color: rgb(40, 44, 36);
+  border-radius: 20px;
+  height: 100%;
+  width: 100%;
+  transition: transform 1s;
+}
+
+.element {
+  background-color: rgb(241, 240, 232);
+  height: 100%;
+  width: 50%;
+  border-radius: 20px;
+}
+
+.container:hover .element {
+  animation: slide-around 1s ease-in-out forwards infinite reverse;
+}
+
+@keyframes slide-around {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  50% {
+    transform: translateX(50%);
+  }
+
+  100% {
+    transform: translateX(100%);
+    opacity: 1;
+  }
+}

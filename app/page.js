@@ -1,95 +1,61 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+"use client";
+
+import Image from "next/image";
+import styles from "./page.module.css";
+import PrismLoader from "../components/prism-loader";
+import React from "react";
+import Head from "next/head";
+import Panel from "../components/panels/panel";
+import Welcome from "../components/welcome";
+import Banner from "../components/banner";
+import WhatsTransition from "../components/whats-transition";
+import WhatsAnimation from "../components/whats-animation";
+import PanelAnimation from "../components/panels/panel-animation";
+import PanelAnimationDirection from "../components/panels/panel-animation-direction";
+import OtherAnimationTools from "../components/other-animation-tools";
+import WhatsTailwindCSS from "../components/tailwind/whats-tailwind";
+import TailwindAnimation from "../components/tailwind/tailwind-animation";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+    <React.Fragment>
+      <Head>
+        <link
+          href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism-okaidia.css"
+          rel="stylesheet"
         />
-      </div>
+      </Head>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+      <PrismLoader />
+      <Welcome />
+      <Banner text={"CSS transition - what it is?"} background={"bg-page2"} />
+      <WhatsTransition />
+      <Banner text={"CSS transition - where should I place this class?"} />
+      <Panel />
+      <Banner text={"CSS animation - what it is?"} background={"bg-page1"} />
+      <WhatsAnimation />
+      <Banner
+        text={"CSS animation - what is animation-fill-mode?"}
+        background={"bg-page1"}
+      />
+      <PanelAnimation />
+      <Banner
+        text={"CSS animation - what is animation-direction?"}
+        background={"bg-page1"}
+      />
+      <PanelAnimationDirection />
+      <Banner text={"Useful CSS tools"} background={"bg-page1"} />
+      <OtherAnimationTools />
+      <Banner
+        text={"Tailwind CSS - how does it work?"}
+        background={"bg-page1"}
+      />
+      <WhatsTailwindCSS />
+      <Banner
+        text={"Tailwind CSS - animate-(...) class"}
+        background={"bg-page1"}
+      />
+      <TailwindAnimation />
+    </React.Fragment>
+  );
 }

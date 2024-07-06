@@ -9,8 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "framer-motion": "^11.2.13",
+    "highlight.js": "^11.9.0",
+    "next": "13.5.6",
+    "prismjs": "^1.29.0",
     "react": "^18",
-    "react-dom": "^18",
-    "next": "13.5.6"
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@types/prismjs": "^1.26.4",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.39",
+    "tailwindcss": "^3.4.4"
   }
 }
