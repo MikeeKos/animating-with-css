@@ -15,11 +15,17 @@ import PanelAnimationDirection from "../components/panels/panel-animation-direct
 import OtherAnimationTools from "../components/other-animation-tools";
 import WhatsTailwindCSS from "../components/tailwind/whats-tailwind";
 import TailwindAnimation from "../components/tailwind/tailwind-animation";
+import TailwindButton from "../components/tailwind/tailwind-button";
+import WhatsFramer from "../components/framer/whats-framer";
+import FramerUsefulCasses from "../components/framer/framer-useful-cases";
+import Footer from "../components/footer";
 
 export default function Home() {
   return (
     <React.Fragment>
       <Head>
+        <title>Animating with CSS</title>
+        <meta name="description" content="animating with CSS" />
         <link
           href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism-okaidia.css"
           rel="stylesheet"
@@ -56,6 +62,22 @@ export default function Home() {
         background={"bg-page1"}
       />
       <TailwindAnimation />
+      <Banner
+        text={"Tailwind CSS - two approaches to buttons"}
+        background={"bg-page1"}
+      />
+      <TailwindButton />
+      <Banner
+        text={"Framer Motion - how does it work?"}
+        background={"bg-page1"}
+      />
+      <WhatsFramer />
+      <Banner
+        text={"Framer Motion - When to use this library?"}
+        background={"bg-page1"}
+      />
+      <FramerUsefulCasses />
+      <Footer />
     </React.Fragment>
   );
 }

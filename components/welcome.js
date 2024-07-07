@@ -189,10 +189,10 @@ function Welcome() {
                 </div>
               </div>
               <div className="pt-16 md:pt-20 w-full h-2/5 p-3">
-                <span className="pt-2 sm:pt-1 pe-3 float-left font-extrabold text-3xl font-page text-pageMenu">
+                <span className="p-2 float-left font-extrabold text-3xl font-page text-pageMenu">
                   CSS
                 </span>
-                <span className="font-body font-semibold lg:font-normal text-pageMenu text-[9px] min-[360px]:text-[12px] leading-[0px] min-[470px]:text-[16px] sm:text-[20px] md:text-[22px] lg:text-[15px] min-[1200px]:text-[19px]">
+                <span className="bg-page2 leading-[-15px] font-body font-semibold lg:font-normal text-pageMenu text-[9px] min-[360px]:text-[12px] min-[470px]:text-[16px] sm:text-[20px] md:text-[22px] lg:text-[15px] min-[1200px]:text-[19px]">
                   {" "}
                   a stylesheet language used to define the presentation and
                   layout of web apps. It is useful for animations because it
@@ -212,7 +212,7 @@ function Welcome() {
                   <div className="w-full h-full bg-page1 shadow-2xl">
                     <div className="relative w-full h-1/5 border-b-4 border-page4 bg-page2 flex items-center justify-center">
                       <span className="absolute font-page font-extrabold tracking-wide text-pageMenu text-md sm:text-xl md:text-xl">
-                        search
+                        topics
                       </span>
                     </div>
                     <div className="w-full h-4/5 p-1 sm:p-2 overflow-hidden">
@@ -230,12 +230,13 @@ function Welcome() {
                           d="M11 6a5 5 0 015 5m.659 5.655L21 21m-2-10a8 8 0 11-16 0 8 8 0 0116 0z"
                         ></path>
                       </svg>
-                      <span className="font-body font-semibold lg:font-normal text-pageMenu text-[9px] min-[360px]:text-[12px] leading-[0px] min-[470px]:text-[16px] sm:text-[20px] md:text-[22px] lg:text-[15px] min-[1200px]:text-[19px]">
-                        <span>
-                          transition animation property tailwind framer motion
-                          itp{" "}
-                        </span>
-                      </span>
+                      <div className="font-body font-semibold lg:font-normal text-pageMenu text-[9px] min-[360px]:text-[12px] min-[470px]:text-[16px] sm:text-[20px] md:text-[22px] lg:text-[15px] min-[1200px]:text-[19px]">
+                        <div>-transition</div>
+                        <div>-animation</div>
+                        <div>-other animation tools</div>
+                        <div>-tailwind CSS</div>
+                        <div>-Framer Motion</div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -251,14 +252,14 @@ function Welcome() {
                   <div className="w-full h-full bg-page1 shadow-2xl">
                     <div className="relative w-full h-1/5 border-b-4 border-page4 bg-page2 flex items-center justify-center">
                       <span className="absolute font-page font-extrabold tracking-wide text-pageMenu text-md sm:text-xl md:text-xl">
-                        add
+                        But why?
                       </span>
                     </div>
                     <div className="w-full h-4/5 p-1 sm:p-2 overflow-hidden">
                       <span className="font-body font-semibold lg:font-normal text-pageMenu text-[9px] min-[360px]:text-[12px] leading-[0px] min-[470px]:text-[16px] sm:text-[20px] md:text-[22px] lg:text-[15px] min-[1200px]:text-[19px]">
                         <span>
-                          add a place you've discovered using the form available
-                          on the website. Go to{" "}
+                          Explore the capabilities of CSS animations and you
+                          might be inspired to create an even better UI{" "}
                         </span>
                       </span>
                     </div>
